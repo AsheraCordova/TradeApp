@@ -1,0 +1,11 @@
+export const agreeTerms:string = '@+id/agreeTerms';
+export const favourite_party_day:string = '@+id/favourite_party_day';
+export const favourite_starter_id:string = '@+id/favourite_starter_id';
+export const karoke_singer:string = '@+id/karoke_singer';
+export const memberTypeContainer:string = '@+id/memberTypeContainer';
+export const party_frequency:string = '@+id/party_frequency';
+export const preferred_cuisine:string = '@+id/preferred_cuisine';
+export const preferred_music:string = '@+id/preferred_music';
+export const primary_favourite_drink_id:string = '@+id/primary_favourite_drink_id';
+export const secondary_favourite_drink_id:string = '@+id/secondary_favourite_drink_id';
+export const toolbar:string = '@+id/toolbar';

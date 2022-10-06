@@ -1,0 +1,1 @@
+{"layout":{"@adapter":"simple","footer":{"@layout":"@layout/redeem_points_earnings_footer","@viewHolderIds":"load_more_data"},"item":{"@viewHolderIds":"notificationDay,notificationMonthYear,notificationTitle,notificationDescription","@layout":"@layout/redeem_points_earnings"}}}

@@ -1,0 +1,1 @@
+export const LOCALE_MANAGER_KEYS: string[] = ["@string/loading", "@string/privacy_policy", "@string/terms_and_conditions", "@string/confirm_logout"];

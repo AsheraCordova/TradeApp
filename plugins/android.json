@@ -1,0 +1,76 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.ashera.core": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.capinsets": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.constraintlayout": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.cssborder": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.datetime": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.drawerlayout": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.gridlayout": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.recycleview": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.toolbar": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.iqkeyboardmanager.ios": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.shutterbug": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.glide": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.sdwebimage.ios": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-splashscreen-ashera": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.filfatstudios.spinnerdialog": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-camera": {
+      "ANDROIDX_CORE_VERSION": "1.6.+",
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-camera-swt": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-qrscanner-swt": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.custom": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <com.ashera.layout.Model param="let title = . from my_transactions->strings into view as string" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <FrameLayout
+            android:id="@+id/tabHolderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/main_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_yellow_300"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/profile_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:padding="3dp"
+                            android:text="@string/total_points_earned"></TextView>
+
+                        <TextView
+                            style="@style/h2_white_bold"
+                            modelPojoToUi="text=toString(totalPoints) from earnings->view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"></TextView>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/orderPreviewTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/earnings_title"
+                        style="@style/tab_label"
+                        modelPojoToUi="selected = . from selectEarnings->view"
+                        onClick="onClickEarnings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_bg_selector"
+                        android:text="@string/earnings"></TextView>
+
+                    <TextView
+                        android:id="@+id/redeeems_title"
+                        style="@style/tab_label"
+                        modelPojoToUi="selected = . from selectRedeems->view"
+                        onClick="onClickRedeems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_bg_selector"
+                        android:text="@string/redeeems"></TextView>
+
+                    <TextView
+                        android:id="@+id/bought_title"
+                        style="@style/tab_label"
+                        modelPojoToUi="selected = . from selectBought->view"
+                        onClick="onClickBought"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_bg_selector"
+                        android:text="@string/bought"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pointsearned"
+                    modelPojoToUi="visibility = visible(.) from selectEarnings->view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        modelPojoToUi="visibility = gone(transactions) from earnings->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/h1_bold_gray_900"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/no_data_found"></TextView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/earned"
+                        adapter="simple"
+                        layout="@xml/recyclerview_redeem_points_earnings"
+                        modelFor="let item in transactions from earnings->view into loopvar as map"
+                        modelIdPath="id"
+                        modelPojoToUi="visibility = visible(transactions) from earnings->view;footerDisabled=not(.) from earningsLoadMore->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        tools:listitem="@layout/redeem_points_earnings"></androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/redeems"
+                    modelPojoToUi="visibility = visible(.) from selectRedeems->view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/redeems_nodata"
+                        modelPojoToUi="visibility = gone(.) from redeems->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/h1_bold_gray_900"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="No Data found :("></TextView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/redeems_recyclerView"
+                        adapter="simple"
+                        layout="@xml/recyclerview_redeem_points_redeems"
+                        modelFor="let item in . from redeems->view into loopvar as map"
+                        modelIdPath="id"
+                        modelPojoToUi="visibility = visible(.) from redeems->view;footerDisabled=not(.) from redeemLoadMore->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bookings"
+                    modelPojoToUi="visibility = visible(.) from selectBought->view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/bought_nodata"
+                        modelPojoToUi="visibility = gone(.) from bought->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/h1_bold_gray_900"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="No Data found :("></TextView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bought_recyclerview"
+                        adapter="simple"
+                        layout="@xml/recyclerview_redeem_points_bought"
+                        modelFor="let item in . from bought->view into loopvar as map"
+                        modelIdPath="id"
+                        modelPojoToUi="visibility = visible(.) from bought->view;footerDisabled=not(.) from bouughtLoadMore->view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"></androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

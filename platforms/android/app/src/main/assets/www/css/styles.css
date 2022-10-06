@@ -1,0 +1,257 @@
+
+            .error_banner {
+					layout_alignParentBottom:"true";
+			layout_alignParentEnd:"true";
+			layout_alignParentRight:"true";
+			layout_alignParentLeft:"true";
+			layout_alignParentStart:"true";
+			padding:"5dp";
+			textStyle:"bold";
+			gravity:"center";
+			background:"@color/color_red_300";
+			textColor:"@color/color_white";
+			text:"@string/error_text";
+			layout_height:"wrap_content";
+			layout_width:"match_parent";
+			
+                 }
+        
+            .styledText {
+					textColor:"@color/color_white";
+			
+                 }
+        
+            .spinner_style {
+					paddingTop:"8dp";
+			paddingBottom:"9dp";
+			layout_marginBottom:"5dp";
+			borderBottomWidth:"1dp";
+				borderColor:"#aaa";
+				
+                 }
+        
+            .main_layout {
+					background:"@color/color_gray_100";
+			borderColor:"@color/color_gray_300";
+				borderWidth:"1dp";
+				
+                 }
+        
+            .drawer_view {
+					background:"@color/color_yellow_300";
+			
+                 }
+        
+            .drawer_border {
+					borderColor:"@color/color_gray_900";
+				borderBottomWidth:"1dp";
+				
+                 }
+        
+            .toolbar_style {
+					background:"@color/color_yellow_300";
+			padding:"@dimen/toolbar_padding";
+			
+                 }
+        
+            .list_header_bottom_border {
+					borderBottomWidth:"2dp";
+				borderColor:"@color/color_black";
+				
+                 }
+        
+            .profile_button {
+					textSize:"@dimen/font_big";
+			gravity:"center";
+			padding:"10dp";
+			textColor:"@color/color_white";
+			background:"@null";
+			borderColor:"@color/color_white";
+				borderRadius:"3dp";
+				borderWidth:"1dp";
+				
+                 }
+        
+            .card_button {
+					background:"@color/color_white";
+			gravity:"center";
+			padding:"10dp";
+			borderColor:"@color/color_gray_300";
+				borderWidth:"1dp";
+				
+                 }
+        
+            .button_style {
+					background:"@color/color_red_300";
+			gravity:"center";
+			padding:"15dp";
+			textColor:"@color/color_white";
+			
+                 }
+        
+            .card_view {
+					background:"@color/color_white";
+			borderColor:"@color/color_gray_300";
+				borderWidth:"1dp";
+				
+                 }
+        
+            .form_card {
+					background:"@color/color_white";
+			layout_margin:"10dp";
+			padding:"10dp";
+			
+                 }
+        
+            .h1_bold_blue_200 {
+					textSize:"@dimen/font_big";
+			textColor:"@color/color_blue_200";
+			textStyle:"bold";
+			
+                 }
+        
+            .h1_bold_black {
+					textColor:"@color/color_black";
+			textStyle:"bold";
+			textSize:"@dimen/font_big";
+			
+                 }
+        
+            .h1_bold_gray_900 {
+					textColor:"@color/color_gray_900";
+			textStyle:"bold";
+			textSize:"@dimen/font_big";
+			
+                 }
+        
+            .h2_red_300 {
+					textSize:"@dimen/font_normal";
+			textColor:"@color/color_gray_900";
+			textColor:"@color/color_red_300";
+			
+                 }
+        
+            .h2_bold_red_300 {
+					textColor:"@color/color_red_300";
+			textStyle:"bold";
+			textSize:"@dimen/font_normal";
+			
+                 }
+        
+            .h2_black {
+					textColor:"@color/color_black";
+			textSize:"@dimen/font_normal";
+			
+                 }
+        
+            .h2_white {
+					textSize:"@dimen/font_normal";
+			textColor:"@color/color_white";
+			
+                 }
+        
+            .h2_gray_900 {
+					textSize:"@dimen/font_normal";
+			textColor:"@color/color_gray_900";
+			
+                 }
+        
+            .h2_white_bold {
+					textSize:"@dimen/font_normal";
+			textColor:"@color/color_white";
+			textStyle:"bold";
+			
+                 }
+        
+            .h2_bold_gray_900 {
+					textColor:"@color/color_gray_900";
+			textStyle:"bold";
+			textSize:"@dimen/font_normal";
+			
+                 }
+        
+            .h2_bold_black {
+					textColor:"@color/color_black";
+			textSize:"@dimen/font_normal";
+			textStyle:"bold";
+			
+                 }
+        
+            .h2_bold_green_300 {
+					textColor:"@color/color_green_300";
+			textStyle:"bold";
+			textSize:"@dimen/font_normal";
+			
+                 }
+        
+            .h3_red_300 {
+					textColor:"@color/color_red_300";
+			textSize:"@dimen/font_small";
+			
+                 }
+        
+            .h3_bold_white {
+					textColor:"@color/color_white";
+			textSize:"@dimen/font_small";
+			textStyle:"bold";
+			
+                 }
+        
+            .h3_white {
+					textColor:"@color/color_white";
+			textSize:"@dimen/font_small";
+			
+                 }
+        
+            .h3_black {
+					textColor:"@color/color_black";
+			textSize:"@dimen/font_small";
+			
+                 }
+        
+            .profile_header {
+					textSize:"@dimen/font_normal";
+			textColor:"@color/color_white";
+			gravity:"center";
+			
+                 }
+        
+            .toolbar_label {
+					textColor:"@color/color_white";
+			textSize:"@dimen/font_page_title";
+			textStyle:"bold";
+			
+                 }
+        
+            .notification_indicator {
+					background:"@color/color_red_300";
+			gravity:"center";
+			textColor:"@color/color_white";
+			textSize:"@dimen/font_very_small";
+			
+                 }
+        
+            .notification_indicator_normal {
+					background:"@color/color_red_300";
+			gravity:"center";
+			textColor:"@color/color_white";
+			textSize:"@dimen/font_very_small";
+			textSize:"@dimen/font_normal";
+			textStyle:"bold";
+			
+                 }
+        
+            .tab_label {
+					background:"@drawable/tab_bg_selector";
+			gravity:"center";
+			padding:"10dp";
+			textAllCaps:"true";
+			textColor:"@color/tab_text_selector";
+			textSize:"@dimen/font_big";
+			singleLine:"true";
+			ellipsize:"end";
+			borderColor:"@color/tab_border_selector";
+				borderBottomWidth:"1dp";
+				
+                 }
+        

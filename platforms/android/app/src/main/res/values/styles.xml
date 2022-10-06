@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="error_banner">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/color_red_300</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:text">@string/error_text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="styledText">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="spinner_style" attrs="borderBottomWidth:1dp;borderColor:#aaa">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">9dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="main_layout" attrs="borderColor:@color/color_gray_300;borderWidth:1dp">
+        <item name="android:background">@color/color_gray_100</item>
+    </style>
+
+    <style name="drawer_view">
+        <item name="android:background">@color/color_yellow_300</item>
+    </style>
+
+    <style name="drawer_border" attrs="borderColor:@color/color_gray_900;borderBottomWidth:1dp;"></style>
+
+    <style name="toolbar_style">
+        <item name="android:background">@color/color_yellow_300</item>
+        <item name="android:padding">@dimen/toolbar_padding</item>
+    </style>
+
+    <style name="list_header_bottom_border" attrs="borderBottomWidth:2dp;borderColor:@color/color_black" />
+
+    <!-- button styles -->
+    <style name="profile_button"  attrs="borderColor:@color/color_white;borderRadius:3dp;borderWidth:1dp;">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="card_button" attrs="borderColor:@color/color_gray_300;borderWidth:1dp">
+        <item name="android:background">@color/color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@color/color_red_300</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- cards -->
+    <style name="card_view" attrs="borderColor:@color/color_gray_300;borderWidth:1dp">
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+    <style name="form_card">
+        <item name="android:background">@color/color_white</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- label styles -->
+    <style name="h1_bold_blue_200">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColor">@color/color_blue_200</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="h1_bold_black">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_big</item>
+    </style>
+
+    <style name="h1_bold_gray_900">
+        <item name="android:textColor">@color/color_gray_900</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_big</item>
+    </style>
+
+    <style name="h2_red_300" parent="h2_gray_900">
+        <item name="android:textColor">@color/color_red_300</item>
+    </style>
+
+    <style name="h2_bold_red_300">
+        <item name="android:textColor">@color/color_red_300</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="h2_black">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="h2_white">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="h2_gray_900">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/color_gray_900</item>
+    </style>
+
+    <style name="h2_white_bold" parent="h2_white">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="h2_bold_gray_900">
+        <item name="android:textColor">@color/color_gray_900</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="h2_bold_black" parent="h2_black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="h2_bold_green_300">
+        <item name="android:textColor">@color/color_green_300</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="h3_red_300">
+        <item name="android:textColor">@color/color_red_300</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+
+    <style name="h3_bold_white">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="h3_white">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="h3_black">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="profile_header" parent="h2_white">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="toolbar_label">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_page_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="notification_indicator">
+        <item name="android:background">@color/color_red_300</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_very_small</item>
+    </style>
+
+    <style name="notification_indicator_normal" parent="notification_indicator">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tab_label" attrs="borderColor:@color/tab_border_selector;borderBottomWidth:1dp">
+        <item name="android:background">@drawable/tab_bg_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/tab_text_selector</item>
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

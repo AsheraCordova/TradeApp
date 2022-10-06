@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <com.ashera.layout.Model param="let title = . from activate_account->strings into view as string" />
+        <com.ashera.layout.Model param="let stepLabel = . from step_3_3->strings into view as string" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <RelativeLayout
+            style="@style/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                zIndex="-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selectlocation_city_store" />
+
+            <ScrollView
+                zIndex="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    style="@style/form_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/h2_bold_red_300"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enter_otp"></TextView>
+
+                        <EditText
+                            android:id="@+id/otp"
+                            formGroupId="otpForm"
+                            modelSyncEvents="onTextChange"
+                            modelUiToPojo="otp = text into registration->session"
+                            onTextChange=""
+                            v_required="true"
+                            validationErrorDisplayType="label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"></EditText>
+
+                        <TextView
+                            android:id="@+id/otpError"
+                            style="@style/h3_red_300"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"></TextView>
+
+                        <TextView
+                            style="@style/h2_gray_900"
+                            onClick="resendMemOTP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/resend_otp"></TextView>
+
+                        <Button
+                            android:id="@+id/submit"
+                            style="@style/button_style"
+                            onClick="validateMemOTP(registration = . from registration->session)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/proceed_to_payment"
+                            tools:ignore="OnClick"></Button>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

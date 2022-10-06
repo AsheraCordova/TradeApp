@@ -1,0 +1,10 @@
+<RadioButton android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    html="true"
+    widget-override-swt="RadioButtonStyledLabel"
+    android:padding="5dp"
+    modelPojoToUi="text = description from item->loopvar;id = id from item->loopvar"
+    tools:ignore="MissingPrefix" />

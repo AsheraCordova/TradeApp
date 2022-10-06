@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/typeSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:id="@+id/image"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/orderDate"
+            android:background="@color/color_gray_900"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notificationDay"
+                    style="@style/notification_indicator_normal"
+                    borderRadius="25dp"
+                    modelPojoToUi="text = createdDay from item->loopvar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="25"></TextView>
+
+                <TextView
+                    android:id="@+id/notificationMonthYear"
+                    style="@style/h2_bold_red_300"
+                    modelPojoToUi="text = createdMonthYear from item->loopvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JUN - 2017"></TextView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image">
+
+            <TextView
+                android:id="@+id/notificationTitle"
+                style="@style/h1_bold_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/bought"></TextView>
+
+            <TextView
+                android:id="@+id/notificationDescription"
+                style="@style/h2_gray_900"
+                modelPojoToUi="text = formatString(.) from item->loopvar"
+                modelPojoToUiParams="format:@string/bought_points_format;fields:save,noOfItems,itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notificationTitle"
+                android:layout_marginBottom="8dp"
+                android:text="description"></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

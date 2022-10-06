@@ -1,0 +1,16 @@
+export const section:string = '@+id/section';
+export const root:string = '@+id/root';
+export const section_header:string = '@+id/section_header';
+export const button_container:string = '@+id/button_container';
+export const imageView:string = '@+id/imageView';
+export const item_name:string = '@+id/item_name';
+export const no_of_items:string = '@+id/no_of_items';
+export const short_description:string = '@+id/short_description';
+export const menu_price_label:string = '@+id/menu_price_label';
+export const menu_price:string = '@+id/menu_price';
+export const member_price_label:string = '@+id/member_price_label';
+export const member_price:string = '@+id/member_price';
+export const save_label:string = '@+id/save_label';
+export const save:string = '@+id/save';
+export const bookItem:string = '@+id/bookItem';
+export const tradeItem:string = '@+id/tradeItem';

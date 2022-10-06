@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <com.ashera.layout.Model param="let title = . from my_tokens->strings into view as string" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <FrameLayout
+            android:id="@+id/tabHolderLayout"
+            style="@style/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    zIndex="-1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/selectlocation_city_store" />
+
+                <LinearLayout
+                    zIndex="1"
+                    android:id="@+id/orderPreviewTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/traded_title"
+                        style="@style/tab_label"
+                        modelPojoToUi="selected = . from showTraded->view"
+                        onClick="onClickTraded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/traded"></TextView>
+
+                    <TextView
+                        android:id="@+id/bought_title"
+                        style="@style/tab_label"
+                        modelPojoToUi="selected = not(.) from showTraded->view"
+                        onClick="onClickBought"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_bg_selector"
+                        android:text="@string/bought"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    zIndex="1"
+                    android:id="@+id/trading"
+                    modelPojoToUi="visibility = visible(.) from showTraded->view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/orderPreviewTabs"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        zIndex="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            modelPojoToUi="visibility = gone(.) from traded->view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/h1_bold_gray_900"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/no_tokens_found"></TextView>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            modelFor="let item in . from traded->view into loopvar as map"
+                            modelPojoToUi="visibility = visible(.) from traded->view"
+                            viewHolderIds="token_number,pay,no_of_items,validat,points_earned,expires,sectionHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            tools:listitem="@layout/my_weekly_transaction_tradeditem"></androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    zIndex="1"
+                    android:id="@+id/booking"
+                    modelPojoToUi="visibility = gone(.) from showTraded->view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/orderPreviewTabs"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/no_token_booking"
+                            modelPojoToUi="visibility = gone(.) from bought->view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/h1_bold_gray_900"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/no_tokens_found"></TextView>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/booked_items"
+                            modelFor="let item in . from bought->view into loopvar as map"
+                            modelPojoToUi="visibility = visible(.) from bought->view"
+                            viewHolderIds="token_number,pay,no_of_items,validat,points_earned,expires,sectionHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            tools:listitem="@layout/my_weekly_transaction_bookeditem"></androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

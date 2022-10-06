@@ -73,8 +73,11 @@
     <preference name="AndroidXEnabled" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="webScaleFactor" value="1.4" />
+	<preference name="webHistoryUrlPrefix" value="/tradeapp" />
+
     <feature name="CustomCordovaPlugin">
         <param name="android-package" value="com.ashera.custom.CustomCordovaPlugin" />
         <param name="onload" value="true" />
     </feature>
+	
 </widget>

@@ -17,9 +17,9 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/AsheraCordova/DateTime.git#ffc7028bd26a502a47ea0dfecdcf36de7ea745bd",
+  "_resolved": "git+https://github.com/AsheraCordova/DateTime.git#b653850304d02d50e5299cebbbe2f440ca051d02",
   "_spec": "https://github.com/AsheraCordova/DateTime",
-  "_where": "D:\\Java\\github_ashera\\TradeApp",
+  "_where": "/Users/ramm/github_ashera/TradeApp",
   "author": {
     "name": "Ram M"
   },

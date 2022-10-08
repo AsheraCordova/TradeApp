@@ -1507,7 +1507,7 @@ function onMessageFromNative (msg) {
         cordova.fireDocumentEvent(action, msg);
         break;
     default:
-        cordova.fireDocumentEvent(action, msg);break;
+        throw new Error('Unknown event action ' + action);
     }
 }
 

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ashera.tradeapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="CDVWebViewEngine">
+        <param name="ios-package" value="CDVWebViewEngine" />
+    </feature>
+    <feature name="LaunchScreen">
+        <param name="ios-package" value="CDVLaunchScreen" />
+    </feature>
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaCapInsetsPlugin">
+        <param name="ios-package" value="CordovaCapInsetsPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.constraintlayout.ios">
+        <param name="ios-package" value="ConstraintLayoutCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.core.ios">
+        <param name="ios-package" value="CoreCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.converter.ios">
+        <param name="ios-package" value="ConverterCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.json.ios">
+        <param name="ios-package" value="JSONAdapterCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.layout.ios">
+        <param name="ios-package" value="AndroidLayoutsCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="com.ashera.gridlayout.ios">
+        <param name="ios-package" value="GridLayoutCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaRecycleViewPlugin">
+        <param name="ios-package" value="CordovaRecycleViewPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaSDWebImagePlugin">
+        <param name="ios-package" value="CordovaSDWebImagePlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaShutterBugPlugin">
+        <param name="ios-package" value="CordovaShutterBugPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaToolbarPlugin">
+        <param name="ios-package" value="CordovaToolbarPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaNavigationDrawerPlugin">
+        <param name="ios-package" value="CordovaNavigationDrawerPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="ios-package" value="CDVSpinnerDialog" />
+    </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <feature name="QRScanner">
+        <param name="ios-package" value="QRScanner" />
+    </feature>
+    <name>HelloCordova</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaTypesRequiringUserActionForPlayback" value="none" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="CameraUsesGeolocation" value="false" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="webScaleFactor" value="1.4" />
+    <preference name="webHistoryUrlPrefix" value="tradeapp/" />
+    <preference name="iosHidetoolbar" value="true" />
+    <feature name="com.ashera.cssborder.ios">
+        <param name="ios-package" value="BorderCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaDateTimePlugin">
+        <param name="ios-package" value="CordovaDateTimePlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CustomCordovaPlugin">
+        <param name="ios-package" value="CustomCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaIQkeyboardManagerPlugin">
+        <param name="ios-package" value="CordovaIQkeyboardManagerPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

@@ -115,11 +115,11 @@ apply from: "../com.ashera.core/tradeapp-converter.gradle"
 apply from: "../com.ashera.core/tradeapp-json.gradle"
 apply from: "../com.ashera.core/tradeapp-layout.gradle"
 apply from: "../com.ashera.constraintlayout/tradeapp-core.gradle"
-apply from: "../com.ashera.drawerlayout/tradeapp-core.gradle"
 apply from: "../com.ashera.gridlayout/tradeapp-core.gradle"
 apply from: "../com.ashera.recycleview/tradeapp-core.gradle"
 apply from: "../com.ashera.glide/tradeapp-core.gradle"
 apply from: "../cordova-plugin-qrscanner/tradeapp-qrscanner.gradle"
+apply from: "../com.ashera.drawerlayout/tradeapp-core.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

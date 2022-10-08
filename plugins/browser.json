@@ -10,13 +10,9 @@
     "com.ashera.core": {},
     "com.ashera.capinsets": {},
     "com.ashera.constraintlayout": {},
-    "com.ashera.cssborder": {},
-    "com.ashera.datetime": {},
-    "com.ashera.drawerlayout": {},
     "com.ashera.gridlayout": {},
     "com.ashera.recycleview": {},
     "com.ashera.toolbar": {},
-    "com.ashera.iqkeyboardmanager.ios": {},
     "com.ashera.shutterbug": {},
     "com.ashera.glide": {},
     "com.ashera.sdwebimage.ios": {},
@@ -26,8 +22,12 @@
     "cordova-plugin-qrscanner": {},
     "cordova-plugin-qrscanner-swt": {},
     "cordova-plugin-camera": {},
+    "cordova-plugin-splashscreen": {},
+    "com.ashera.drawerlayout": {},
+    "com.ashera.cssborder": {},
+    "com.ashera.datetime": {},
     "com.ashera.custom": {},
-    "cordova-plugin-splashscreen": {}
+    "com.ashera.iqkeyboardmanager.ios": {}
   },
   "dependent_plugins": {}
 }

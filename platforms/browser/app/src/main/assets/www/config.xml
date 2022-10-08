@@ -1,14 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ashera.tradeapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
-    <description>Sample Apache Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <preference name="loglevel" value="DEBUG" />
     <feature name="CoreCordovaPlugin">
         <param name="android-package" value="com.ashera.core.CoreCordovaPlugin" />
         <param name="onload" value="true" />
@@ -33,18 +24,6 @@
         <param name="android-package" value="com.ashera.constraintlayout.AndroidXConstraintLayout" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="AndroidCSSBorderPlugin">
-        <param name="android-package" value="com.ashera.cssborder.BorderCordovaPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="CordovaDateTimePlugin">
-        <param name="android-package" value="com.ashera.datetime.CordovaDateTimePlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="CordovaNavigationDrawerPlugin">
-        <param name="android-package" value="com.ashera.drawerlayout.CordovaNavigationDrawerPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="AndroidXGridLayoutPlugin">
         <param name="android-package" value="com.ashera.gridlayout.AndroidXGridLayoutPlugin" />
         <param name="onload" value="true" />
@@ -64,20 +43,34 @@
     <feature name="SpinnerDialog">
         <param name="android-package" value="com.filfatstudios.spinnerdialog.SpinnerDialog" />
     </feature>
-    <feature name="QRScanner">
-        <param name="browser-package" value="QRScanner" />
+    <feature name="CordovaNavigationDrawerPlugin">
+        <param name="android-package" value="com.ashera.drawerlayout.CordovaNavigationDrawerPlugin" />
+        <param name="onload" value="true" />
     </feature>
-    <feature name="Camera">
-        <param name="browser-package" value="Camera" />
-    </feature>
+    <name>HelloCordova</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <preference name="loglevel" value="DEBUG" />
     <preference name="AndroidXEnabled" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="webScaleFactor" value="1.4" />
-	<preference name="webHistoryUrlPrefix" value="/tradeapp" />
-
+    <preference name="webHistoryUrlPrefix" value="tradeapp/" />
+    <preference name="iosHidetoolbar" value="true" />
+    <feature name="AndroidCSSBorderPlugin">
+        <param name="android-package" value="com.ashera.cssborder.BorderCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaDateTimePlugin">
+        <param name="android-package" value="com.ashera.datetime.CordovaDateTimePlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="CustomCordovaPlugin">
         <param name="android-package" value="com.ashera.custom.CustomCordovaPlugin" />
         <param name="onload" value="true" />
     </feature>
-	
 </widget>

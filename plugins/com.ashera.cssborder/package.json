@@ -17,9 +17,9 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/AsheraCordova/CSSBorder.git#44db2519c9e68fd6bcde9e81d38cd803fa5c46ff",
+  "_resolved": "git+https://github.com/AsheraCordova/CSSBorder.git#44e8935841dc4579c3d980359d77c4e67b7177d1",
   "_spec": "https://github.com/AsheraCordova/CSSBorder",
-  "_where": "D:\\Java\\github_ashera\\TradeApp",
+  "_where": "/Users/ramm/github_ashera/TradeApp",
   "author": {
     "name": "Ram M"
   },

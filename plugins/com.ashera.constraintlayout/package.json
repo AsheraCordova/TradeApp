@@ -17,9 +17,9 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/AsheraCordova/ConstraintLayout.git#c8cc10634609d2108f741b5e63dacf852623493c",
+  "_resolved": "git+https://github.com/AsheraCordova/ConstraintLayout.git#2e31eceb3d3bdfa28b30848217239e402e954047",
   "_spec": "https://github.com/AsheraCordova/ConstraintLayout",
-  "_where": "D:\\Java\\github_ashera\\TradeApp",
+  "_where": "/Users/ramm/github_ashera/TradeApp",
   "author": {
     "name": "Ram M"
   },

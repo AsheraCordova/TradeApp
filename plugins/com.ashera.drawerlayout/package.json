@@ -17,9 +17,9 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/AsheraCordova/Drawer.git#3cbfc20f8e896f56461c03e24247a6d498c2961c",
+  "_resolved": "git+https://github.com/AsheraCordova/Drawer.git#9c34ca53702a8dfde1ffb3d37c6f276b25c0ae21",
   "_spec": "https://github.com/AsheraCordova/Drawer",
-  "_where": "D:\\Java\\github_ashera\\TradeApp",
+  "_where": "/Users/ramm/github_ashera/TradeApp",
   "author": {
     "name": "Ram M"
   },

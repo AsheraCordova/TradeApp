@@ -33,18 +33,6 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"AndroidCSSBorderPlugin\"><param name=\"android-package\" value=\"com.ashera.cssborder.BorderCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"CordovaDateTimePlugin\"><param name=\"android-package\" value=\"com.ashera.datetime.CordovaDateTimePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"CordovaNavigationDrawerPlugin\"><param name=\"android-package\" value=\"com.ashera.drawerlayout.CordovaNavigationDrawerPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"AndroidXGridLayoutPlugin\"><param name=\"android-package\" value=\"com.ashera.gridlayout.AndroidXGridLayoutPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
@@ -62,6 +50,18 @@
             },
             {
               "xml": "<feature name=\"SpinnerDialog\"><param name=\"android-package\" value=\"com.filfatstudios.spinnerdialog.SpinnerDialog\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"CordovaNavigationDrawerPlugin\"><param name=\"android-package\" value=\"com.ashera.drawerlayout.CordovaNavigationDrawerPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AndroidCSSBorderPlugin\"><param name=\"android-package\" value=\"com.ashera.cssborder.BorderCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"CordovaDateTimePlugin\"><param name=\"android-package\" value=\"com.ashera.datetime.CordovaDateTimePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
@@ -91,13 +91,9 @@
     "com.ashera.core": {},
     "com.ashera.capinsets": {},
     "com.ashera.constraintlayout": {},
-    "com.ashera.cssborder": {},
-    "com.ashera.datetime": {},
-    "com.ashera.drawerlayout": {},
     "com.ashera.gridlayout": {},
     "com.ashera.recycleview": {},
     "com.ashera.toolbar": {},
-    "com.ashera.iqkeyboardmanager.ios": {},
     "com.ashera.shutterbug": {},
     "com.ashera.glide": {},
     "com.ashera.sdwebimage.ios": {},
@@ -107,8 +103,12 @@
     "cordova-plugin-qrscanner": {},
     "cordova-plugin-qrscanner-swt": {},
     "cordova-plugin-camera": {},
+    "cordova-plugin-splashscreen": {},
+    "com.ashera.drawerlayout": {},
+    "com.ashera.cssborder": {},
+    "com.ashera.datetime": {},
     "com.ashera.custom": {},
-    "cordova-plugin-splashscreen": {}
+    "com.ashera.iqkeyboardmanager.ios": {}
   },
   "dependent_plugins": {},
   "modules": [
@@ -130,12 +130,6 @@
       "id": "com.ashera.core.layoutAddRes",
       "file": "plugins/com.ashera.core/layout/browser/www/js/add_res.js",
       "pluginId": "com.ashera.core",
-      "runs": true
-    },
-    {
-      "id": "com.ashera.datetime.datetimeAddRes",
-      "file": "plugins/com.ashera.datetime/browser/www/js/add_res.js",
-      "pluginId": "com.ashera.datetime",
       "runs": true
     },
     {
@@ -209,19 +203,21 @@
       "clobbers": [
         "navigator.splashscreen"
       ]
+    },
+    {
+      "id": "com.ashera.datetime.datetimeAddRes",
+      "file": "plugins/com.ashera.datetime/browser/www/js/add_res.js",
+      "pluginId": "com.ashera.datetime",
+      "runs": true
     }
   ],
   "plugin_metadata": {
     "com.ashera.core": "1.0",
     "com.ashera.capinsets": "1.0",
     "com.ashera.constraintlayout": "1.0",
-    "com.ashera.cssborder": "1.0",
-    "com.ashera.datetime": "1.0",
-    "com.ashera.drawerlayout": "1.0",
     "com.ashera.gridlayout": "1.0",
     "com.ashera.recycleview": "1.0",
     "com.ashera.toolbar": "1.0",
-    "com.ashera.iqkeyboardmanager.ios": "1.0",
     "com.ashera.shutterbug": "1.0",
     "com.ashera.glide": "1.0",
     "com.ashera.sdwebimage.ios": "1.0",
@@ -231,7 +227,11 @@
     "cordova-plugin-qrscanner": "3.0.1",
     "cordova-plugin-qrscanner-swt": "1.0",
     "cordova-plugin-camera": "6.0.1-dev",
+    "cordova-plugin-splashscreen": "6.0.2",
+    "com.ashera.drawerlayout": "1.0",
+    "com.ashera.cssborder": "1.0",
+    "com.ashera.datetime": "1.0",
     "com.ashera.custom": "1.0",
-    "cordova-plugin-splashscreen": "6.0.2"
+    "com.ashera.iqkeyboardmanager.ios": "1.0"
   }
 }

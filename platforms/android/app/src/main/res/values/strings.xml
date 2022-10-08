@@ -3,12 +3,11 @@
     <string name="eventparams_inc_dec">model,noOfItems</string>
     <string name="refresh_on_inc_dec">noOfItems</string>
     <string name="refresh_qty_tradeprice">pointsEarned</string>
-    <string name="eventparams_proceed">exp_get:. from showDetails->view;exp_store:. into showDetails->view as bool</string>
+    <string name="eventparams_proceed">exp_get:. from showDetails-&gt;view;exp_store:. into showDetails-&gt;view as bool</string>
     <string name="earned_points_format">You earned %s points by trading %s no(s). of %s</string>
     <string name="redeem_points_format">You redeemed %s points on Bill Number %s</string>
     <string name="bought_points_format">You saved Rs %s by booking %s no(s). of %s</string>
-
-    <string name="app_name">DemoApp</string>
+    <string name="app_name">HelloCordova</string>
     <string name="error_text">There were errors on the page. Click here to view the same.</string>
     <string name="required_error_message">Should not be empty.</string>
     <string name="max_length_error_message">Maximum number of characters allowed is %d.</string>
@@ -30,7 +29,6 @@
     <string name="length_atmost_error_message">Number should be atmost %d.</string>
     <string name="length_atleast_error_message">Number should be atleast %d.</string>
     <string name="strongpassword_error_message">Password should contains atleast 8 characters, one uppercase letter, number and special character.</string>
-
     <string name="launcher_name">@string/app_name</string>
     <string name="activity_name">@string/launcher_name</string>
     <string name="trading_app">Trading App</string>
@@ -51,7 +49,6 @@
     <string name="membership_packages">Membership packages</string>
     <string name="membership_package_details">Membership Details</string>
     <string name="personal_info">Personal Info</string>
-
     <string name="first_name">First Name</string>
     <string name="full_name">Name</string>
     <string name="mandatory_text_format">%s *</string>
@@ -99,7 +96,7 @@
     <string name="quantity_format">Quantity - %s item(s)</string>
     <string name="buy_item_transaction">Buy Item Transaction</string>
     <string name="item_name">Item Name</string>
-    <string name="item_of">&#160;of&#160;</string>
+    <string name="item_of"> of </string>
     <string name="token_number">Token Number</string>
     <string name="membership_id">Membership Id</string>
     <string name="pay">Pay</string>
@@ -166,9 +163,8 @@
     <string name="my_tokens">My Tokens</string>
     <string name="traded">Traded</string>
     <string name="notifications">Notifications</string>
-
     <array name="music">
-        <item></item>
+        <item />
         <item>EDM</item>
         <item>Rock</item>
         <item>Retro</item>
@@ -177,7 +173,7 @@
         <item>Old school</item>
     </array>
     <array name="cuisine">
-        <item></item>
+        <item />
         <item>Continental</item>
         <item>Chinese</item>
         <item>South Indian</item>
@@ -185,31 +181,31 @@
         <item>Multi cuisine</item>
     </array>
     <array name="party_frequency">
-        <item></item>
+        <item />
         <item>Weekly Once</item>
         <item>Weekly Twice</item>
         <item>Weekly Thrice</item>
         <item>Everyday</item>
     </array>
     <array name="yes_no">
-        <item></item>
+        <item />
         <item>Yes</item>
         <item>No</item>
     </array>
     <array name="gender">
-        <item></item>
+        <item />
         <item>Male</item>
         <item>Female</item>
         <item>Transgender</item>
     </array>
     <array name="gender_values">
-        <item></item>
+        <item />
         <item>male</item>
         <item>female</item>
         <item>transgender</item>
     </array>
     <array name="states">
-        <item></item>
+        <item />
         <item>Andaman and Nicobar Islands</item>
         <item>Andhra Pradesh</item>
         <item>Arunachal Pradesh</item>
@@ -246,7 +242,6 @@
         <item>Uttar Pradesh</item>
         <item>West Bengal</item>
     </array>
-
     <array name="days_of_week">
         <item>Sunday</item>
         <item>Monday</item>

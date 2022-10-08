@@ -69,13 +69,9 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "com.ashera.core": "1.0",
     "com.ashera.capinsets": "1.0",
     "com.ashera.constraintlayout": "1.0",
-    "com.ashera.cssborder": "1.0",
-    "com.ashera.datetime": "1.0",
-    "com.ashera.drawerlayout": "1.0",
     "com.ashera.gridlayout": "1.0",
     "com.ashera.recycleview": "1.0",
     "com.ashera.toolbar": "1.0",
-    "com.ashera.iqkeyboardmanager.ios": "1.0",
     "com.ashera.shutterbug": "1.0",
     "com.ashera.glide": "1.0",
     "com.ashera.sdwebimage.ios": "1.0",
@@ -85,7 +81,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-camera-swt": "1.0",
     "cordova-plugin-qrscanner": "3.0.1",
     "cordova-plugin-qrscanner-swt": "1.0",
+    "cordova-plugin-splashscreen": "6.0.2",
+    "com.ashera.drawerlayout": "1.0",
+    "com.ashera.cssborder": "1.0",
+    "com.ashera.datetime": "1.0",
     "com.ashera.custom": "1.0",
-    "cordova-plugin-splashscreen": "6.0.2"
+    "com.ashera.iqkeyboardmanager.ios": "1.0"
   };
 });

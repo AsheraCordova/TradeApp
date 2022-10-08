@@ -17,9 +17,9 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/AsheraCordova/IQkeyboardManager.git#e4e4866988338abe3c06b7b2c4f719a97681d42c",
+  "_resolved": "git+https://github.com/AsheraCordova/IQkeyboardManager.git#0fad2529e0c5b59b4d174506f52764ce4d498501",
   "_spec": "https://github.com/AsheraCordova/IQkeyboardManager",
-  "_where": "D:\\Java\\github_ashera\\TradeApp",
+  "_where": "/Users/ramm/github_ashera/TradeApp",
   "author": {
     "name": "Ram M"
   },

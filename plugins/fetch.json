@@ -154,7 +154,7 @@
   "com.ashera.custom": {
     "source": {
       "type": "local",
-      "path": "D:\\Java\\github_ashera\\TradeApp\\node_modules\\com.ashera.customplugin"
+      "path": "/Users/ramm/github_ashera/TradeApp/node_modules/com.ashera.customplugin"
     },
     "is_top_level": true,
     "variables": {}
@@ -162,9 +162,17 @@
   "cordova-plugin-splashscreen": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-splashscreen@6.0.2"
+      "id": "cordova-plugin-splashscreen@^6.0.2"
     },
     "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support"
+    },
+    "is_top_level": false,
     "variables": {}
   }
 }

@@ -41,12 +41,12 @@ apply from: "../com.ashera.core/tradeapp-json.gradle"
 apply from: "../com.ashera.core/tradeapp-layout.gradle"
 apply from: "../com.ashera.capinsets/tradeapp-core.gradle"
 apply from: "../com.ashera.constraintlayout/tradeapp-core.gradle"
-apply from: "../com.ashera.cssborder/tradeapp-core.gradle"
-apply from: "../com.ashera.datetime/tradeapp-core.gradle"
-apply from: "../com.ashera.drawerlayout/tradeapp-core.gradle"
 apply from: "../com.ashera.gridlayout/tradeapp-core.gradle"
 apply from: "../com.ashera.recycleview/tradeapp-core.gradle"
 apply from: "../com.ashera.toolbar/tradeapp-core.gradle"
+apply from: "../com.ashera.drawerlayout/tradeapp-core.gradle"
+apply from: "../com.ashera.cssborder/tradeapp-core.gradle"
+apply from: "../com.ashera.datetime/tradeapp-core.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 

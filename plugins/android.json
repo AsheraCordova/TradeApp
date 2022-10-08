@@ -16,15 +16,6 @@
     "com.ashera.constraintlayout": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
-    "com.ashera.cssborder": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.datetime": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.drawerlayout": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
     "com.ashera.gridlayout": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
@@ -32,9 +23,6 @@
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
     "com.ashera.toolbar": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.iqkeyboardmanager.ios": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
     "com.ashera.shutterbug": {
@@ -65,10 +53,22 @@
     "cordova-plugin-qrscanner-swt": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.drawerlayout": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.cssborder": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.datetime": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
     "com.ashera.custom": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
-    "cordova-plugin-splashscreen": {
+    "com.ashera.iqkeyboardmanager.ios": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     }
   },

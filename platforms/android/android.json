@@ -33,18 +33,6 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"AndroidCSSBorderPlugin\"><param name=\"android-package\" value=\"com.ashera.cssborder.BorderCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"CordovaDateTimePlugin\"><param name=\"android-package\" value=\"com.ashera.datetime.CordovaDateTimePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"CordovaNavigationDrawerPlugin\"><param name=\"android-package\" value=\"com.ashera.drawerlayout.CordovaNavigationDrawerPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"AndroidXGridLayoutPlugin\"><param name=\"android-package\" value=\"com.ashera.gridlayout.AndroidXGridLayoutPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
@@ -77,11 +65,23 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"CustomCordovaPlugin\"><param name=\"android-package\" value=\"com.ashera.custom.CustomCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"CordovaNavigationDrawerPlugin\"><param name=\"android-package\" value=\"com.ashera.drawerlayout.CordovaNavigationDrawerPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AndroidCSSBorderPlugin\"><param name=\"android-package\" value=\"com.ashera.cssborder.BorderCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"CordovaDateTimePlugin\"><param name=\"android-package\" value=\"com.ashera.datetime.CordovaDateTimePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"CustomCordovaPlugin\"><param name=\"android-package\" value=\"com.ashera.custom.CustomCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ]
@@ -151,15 +151,6 @@
     "com.ashera.constraintlayout": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
-    "com.ashera.cssborder": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.datetime": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.drawerlayout": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
     "com.ashera.gridlayout": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
@@ -167,9 +158,6 @@
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
     "com.ashera.toolbar": {
-      "PACKAGE_NAME": "com.ashera.tradeapp"
-    },
-    "com.ashera.iqkeyboardmanager.ios": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
     "com.ashera.shutterbug": {
@@ -200,10 +188,22 @@
     "cordova-plugin-qrscanner-swt": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.drawerlayout": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.cssborder": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
+    "com.ashera.datetime": {
+      "PACKAGE_NAME": "com.ashera.tradeapp"
+    },
     "com.ashera.custom": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     },
-    "cordova-plugin-splashscreen": {
+    "com.ashera.iqkeyboardmanager.ios": {
       "PACKAGE_NAME": "com.ashera.tradeapp"
     }
   },
@@ -278,13 +278,9 @@
     "com.ashera.core": "1.0",
     "com.ashera.capinsets": "1.0",
     "com.ashera.constraintlayout": "1.0",
-    "com.ashera.cssborder": "1.0",
-    "com.ashera.datetime": "1.0",
-    "com.ashera.drawerlayout": "1.0",
     "com.ashera.gridlayout": "1.0",
     "com.ashera.recycleview": "1.0",
     "com.ashera.toolbar": "1.0",
-    "com.ashera.iqkeyboardmanager.ios": "1.0",
     "com.ashera.shutterbug": "1.0",
     "com.ashera.glide": "1.0",
     "com.ashera.sdwebimage.ios": "1.0",
@@ -294,7 +290,11 @@
     "cordova-plugin-camera-swt": "1.0",
     "cordova-plugin-qrscanner": "3.0.1",
     "cordova-plugin-qrscanner-swt": "1.0",
+    "cordova-plugin-splashscreen": "6.0.2",
+    "com.ashera.drawerlayout": "1.0",
+    "com.ashera.cssborder": "1.0",
+    "com.ashera.datetime": "1.0",
     "com.ashera.custom": "1.0",
-    "cordova-plugin-splashscreen": "6.0.2"
+    "com.ashera.iqkeyboardmanager.ios": "1.0"
   }
 }

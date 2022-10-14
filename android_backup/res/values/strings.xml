@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="eventparams_inc_dec">model,noOfItems</string>
+    <string name="refresh_on_inc_dec">noOfItems</string>
+    <string name="refresh_qty_tradeprice">pointsEarned</string>
+    <string name="eventparams_proceed">exp_get:. from showDetails->view;exp_store:. into showDetails->view as bool</string>
+    <string name="earned_points_format">You earned %s points by trading %s no(s). of %s</string>
+    <string name="redeem_points_format">You redeemed %s points on Bill Number %s</string>
+    <string name="bought_points_format">You saved Rs %s by booking %s no(s). of %s</string>
+
+    <string name="app_name">DemoApp</string>
+    <string name="error_text">There were errors on the page. Click here to view the same.</string>
+    <string name="required_error_message">Should not be empty.</string>
+    <string name="max_length_error_message">Maximum number of characters allowed is %d.</string>
+    <string name="min_length_error_message">Minimum number of characters required is %d.</string>
+    <string name="max_value_error_message">Max value allowed is %d.</string>
+    <string name="min_value_error_message">Min value required is %d.</string>
+    <string name="pattern_error_message">Invalid format specified.</string>
+    <string name="url_error_message">Please enter valid url.</string>
+    <string name="alphabets_error_message">Please enter only Alphabets.</string>
+    <string name="alphanumeric_error_message">Please enter only alphanumeric characters.</string>
+    <string name="date_error_message">Invalid date format.</string>
+    <string name="inrange_error_message">Number must be between %d and %d.</string>
+    <string name="email_error_message">Invalid email address.</string>
+    <string name="mobile_error_message">Invalid Mobile number.</string>
+    <string name="number_error_message">Must be number.</string>
+    <string name="positivenumber_error_message">Should be positive integer.</string>
+    <string name="pincode_error_message">Must be valid pincode.</string>
+    <string name="length_between_error_message">Number length must be between %d and %d.</string>
+    <string name="length_atmost_error_message">Number should be atmost %d.</string>
+    <string name="length_atleast_error_message">Number should be atleast %d.</string>
+    <string name="strongpassword_error_message">Password should contains atleast 8 characters, one uppercase letter, number and special character.</string>
+
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="trading_app">Trading App</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="login_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="register_now">Register now</string>
+    <string name="login">LOGIN</string>
+    <string name="copyright_text">Copyright © 2022, Ashera</string>
+    <string name="choose_membership_type">CHOOSE MEMBERSHIP TYPE</string>
+    <string name="membership_type">Membership Type</string>
+    <string name="continue_btn">CONTINUE</string>
+    <string name="details">DETAILS</string>
+    <string name="step_1_3">STEP 1/3</string>
+    <string name="step_2_3">STEP 2/3</string>
+    <string name="step_3_3">STEP 3/3</string>
+    <string name="membership_packages">Membership packages</string>
+    <string name="membership_package_details">Membership Details</string>
+    <string name="personal_info">Personal Info</string>
+
+    <string name="first_name">First Name</string>
+    <string name="full_name">Name</string>
+    <string name="mandatory_text_format">%s *</string>
+    <string name="currency_format">Rs %s</string>
+    <string name="perc_format">%s%%</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="gender_lbl">Gender</string>
+    <string name="mobile_number_mandatory">Mobile Number</string>
+    <string name="email_mandatory">Email</string>
+    <string name="password_mandatory">Password</string>
+    <string name="renter_password">Renter Password</string>
+    <string name="your_intrests">Your Interests</string>
+    <string name="agree_to_terms">I agree to terms and condition</string>
+    <string name="accept_terms">Please accept terms and conditions</string>
+    <string name="your_primary_favorite_drink">Your Primary Favorite Drink?</string>
+    <string name="your_secondary_favorite_drink">Your Secondary Favorite Drink?</string>
+    <string name="your_favorite_starter">Your Favorite Starter?</string>
+    <string name="please_select">Please Select</string>
+    <string name="submit">SUBMIT</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="proceed_to_payment">VALIDATE &amp; PROCEED TO PAYMENT</string>
+    <string name="activate_account">Activate Account</string>
+    <string name="payment">Payment</string>
+    <string name="thank_you_for_registering_with_us">Thank you for registering with us.</string>
+    <string name="redirecting_to_pg">Redirecting to payment gateway...</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="ashera_family">Ashera App</string>
+    <string name="thank_you_for_registering">Thank you for registering. We are happy to serve you.</string>
+    <string name="item_allocated">ITEM AllOCATED (%s)</string>
+    <string name="menu_price">Menu Price</string>
+    <string name="mem_price">Mem. Price</string>
+    <string name="buy">BUY</string>
+    <string name="trade">TRADE</string>
+    <string name="no_items_allocated_for_trading">No Items allocated for trading.</string>
+    <string name="buy_item">Buy Item</string>
+    <string name="loading">Loading...</string>
+    <string name="token_expire_msg">Note : All tokens will expire if the item is not bought on the date of visit.</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="change_password">Change Password</string>
+    <string name="membership_details">Membership Details</string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="quantity_format">Quantity - %s item(s)</string>
+    <string name="buy_item_transaction">Buy Item Transaction</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_of">&#160;of&#160;</string>
+    <string name="token_number">Token Number</string>
+    <string name="membership_id">Membership Id</string>
+    <string name="pay">Pay</string>
+    <string name="you_saved">You Saved</string>
+    <string name="valid_at">Valid At</string>
+    <string name="expiry">Expiry</string>
+    <string name="created_on">Created On</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="update_password">UPDATE PASSWORD</string>
+    <string name="no_tokens_found">No tokens found :(</string>
+    <string name="your_payment_is_pending">Your payment is pending.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="max_qty">Max Qty</string>
+    <string name="colon_format">%s:</string>
+    <string name="points_earned">Points Earned</string>
+    <string name="trade_request_section">Trade Request Section</string>
+    <string name="qty">Qty</string>
+    <string name="trade_price">Trade Price</string>
+    <string name="purchase_items_point_credit_warning">Note: Points will be credited to your account after the purchase of item has been done at our stores.</string>
+    <string name="traded_to">Traded To</string>
+    <string name="item_trading">Item Trading</string>
+    <string name="store_name">Store Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="proceed">PROCEED</string>
+    <string name="date_of_visit">Date of Visit</string>
+    <string name="profile_summary">Profile Summary</string>
+    <string name="edit_personal_info">Edit Personal Info</string>
+    <string name="office_address">Office Address</string>
+    <string name="residence_address">Residence Address</string>
+    <string name="pick_up_and_drop_facility_warning">Note : Pick up and drop facility only for the registered address. Available only for club membership.</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="edit_your_intrests">Edit Your Intrests</string>
+    <string name="you_preferred_music">What type of music do you prefer?</string>
+    <string name="your_preferred_cuisine_for_brunch">What type of cuisine do you prefer for brunch?</string>
+    <string name="do_you_like_karaoke_nights">Do you like karaoke nights?</string>
+    <string name="how_often_do_you_party">How often do you Party?</string>
+    <string name="your_favorite_partying_day">Which is you favorite partying day?</string>
+    <string name="fav_drinks">Fav. Drinks</string>
+    <string name="fav_starters">Fav. Starters</string>
+    <string name="often_parties">Often Parties</string>
+    <string name="fav_day_for_party">Fav. Day for Party</string>
+    <string name="pref_music">Pref. Music:</string>
+    <string name="pref_cuisine">Pref. Cuisine</string>
+    <string name="karoke_singer">Karoke Singer</string>
+    <string name="total_points_earned">Total Points Earned</string>
+    <string name="bought">Bought</string>
+    <string name="redeeems">Redeeems</string>
+    <string name="earnings">Earnings</string>
+    <string name="no_data_found">No Data found :(</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="redeem_points">Redeem Points</string>
+    <string name="confirm_logout">Do you want to logout?</string>
+    <string name="home">Home</string>
+    <string name="save">Save</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="my_address">My Address</string>
+    <string name="edit">EDIT</string>
+    <string name="favourite_information">Favourite Information</string>
+    <string name="my_tokens">My Tokens</string>
+    <string name="traded">Traded</string>
+    <string name="notifications">Notifications</string>
+
+    <array name="music">
+        <item></item>
+        <item>EDM</item>
+        <item>Rock</item>
+        <item>Retro</item>
+        <item>classic</item>
+        <item>Hip hop</item>
+        <item>Old school</item>
+    </array>
+    <array name="cuisine">
+        <item></item>
+        <item>Continental</item>
+        <item>Chinese</item>
+        <item>South Indian</item>
+        <item>North Indian</item>
+        <item>Multi cuisine</item>
+    </array>
+    <array name="party_frequency">
+        <item></item>
+        <item>Weekly Once</item>
+        <item>Weekly Twice</item>
+        <item>Weekly Thrice</item>
+        <item>Everyday</item>
+    </array>
+    <array name="yes_no">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <array name="gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </array>
+    <array name="gender_values">
+        <item></item>
+        <item>male</item>
+        <item>female</item>
+        <item>transgender</item>
+    </array>
+    <array name="states">
+        <item></item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </array>
+
+    <array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </array>
+    <array name="days_of_week_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+</resources>

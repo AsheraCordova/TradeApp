@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/index">
+    <fragment
+        android:id="@+id/index"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/index">
+        <argument
+            android:name="fileName"
+            android:defaultValue="layout/index.xml"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_index_to_login"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="@string/login"
+        tools:layout="@layout/login">
+        <action
+            android:id="@+id/action_login_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboard" />
+        <action
+            android:id="@+id/action_login_to_forgot_password"
+            app:destination="@id/forgot_password" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="@string/forgot_password"
+        tools:layout="@layout/forgot_password">
+        <action
+            android:id="@+id/action_forgot_password_to_forgot_password_otp"
+            app:destination="@id/forgot_password_otp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/register_membership">
+       <action
+            android:id="@+id/action_registration_to_register_membership_personal"
+            app:destination="@id/register_membership_personal" />
+        <action
+            android:id="@+id/action_registration_to_register_membership_details"
+            app:destination="@id/register_membership_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_membership_details"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/register_membership_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/membership_profile_summary"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/membership_profile_summary">
+    </fragment>
+
+    <fragment
+        android:id="@+id/membership_profile_personal"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/membership_profile_personal">
+    </fragment>
+
+    <fragment
+        android:id="@+id/membership_profile_intrests"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/membership_profile_intrests">
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_membership_personal"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/register_membership_personal">
+        <action
+            android:id="@+id/action_register_membership_personal_to_register_membership_otp"
+            app:destination="@id/register_membership_otp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_membership_otp"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/register_membership_otp">
+        <action
+            android:id="@+id/action_register_membership_otp_to_register_membership_payment"
+            app:destination="@id/register_membership_payment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_membership_payment"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Registration"
+        tools:layout="@layout/register_membership_payment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_item_booking"
+            app:destination="@id/item_booking" />
+        <action
+            android:id="@+id/action_dashboard_to_item_trading"
+            app:destination="@id/item_trading" />
+        <action
+            android:id="@+id/action_dashboard_to_notification_list"
+            app:destination="@id/notification_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notification_list"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/notification_list">
+    </fragment>
+
+    <fragment
+        android:id="@+id/change_password"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="@string/change_password"
+        tools:layout="@layout/change_password">
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_trading"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/item_trading">
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_trading_confirmation"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/item_trading_confirmation">
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_trading_confirmation_summary"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/item_trading_confirmation_summary">
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_booking"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/item_booking">
+        <action
+            android:id="@+id/action_item_booking_to_item_booking_summary"
+            app:destination="@id/item_booking_summary" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_booking_summary"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/item_booking_summary">
+    </fragment>
+    
+    <fragment
+        android:id="@+id/error"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Error"
+        tools:layout="@layout/error">
+         <action
+             android:id="@+id/action_error_to_error_detail"
+             app:destination="@id/error_detail" />
+     </fragment>
+    
+     <fragment
+        android:id="@+id/error_detail"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Error Detail"
+        tools:layout="@layout/error_detail"> 
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_week_transaction"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/my_week_transaction">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/redeem_points"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/redeem_points">
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgot_password_otp"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/forgot_password_otp">
+    </fragment>
+
+    <fragment
+        android:id="@+id/webview"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/webview">
+    </fragment>
+    <fragment
+        android:id="@+id/faq"
+        android:name="com.ashera.core.GenericFragment"
+        android:label="Home"
+        tools:layout="@layout/faq">
+    </fragment>
+</navigation>

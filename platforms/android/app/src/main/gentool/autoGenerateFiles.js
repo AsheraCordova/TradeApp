@@ -20,6 +20,10 @@ fs.readdirSync("../res/").forEach(dir => {
 
 syncPlatformRes();
 
+if (process.argv[2] == 'skip_watch') {
+	return;
+}
+
 watch('../assets/www/js', { recursive: true }, function (evt, name) {
     syncBundleJs();
 });
@@ -40,11 +44,15 @@ watch('../res', { recursive: true }, function (evt, name) {
 });
 
 function syncPlatformRes() {
+	// android file
+	cpx.copy("../res/layout/*.xml", "../assets/www/layout");
+
 	syncSwtRes();
+	updateDrawableSize();	
 	syncWebRes();
 	syncIosRes();
+	syncSwtRes();
 	syncToWWW();
-	updateDrawableSize();
 }
 
 function syncSwtRes() {
@@ -114,8 +122,8 @@ function syncWebRes() {
 	if (fs.existsSync(webPath)) {
 		console.log("web sync");
 		syncRes(webPath, webAssetPath);	
-		cpx.copySync(webAssetPath + "../../../../../res/xml/config.xml", webAssetPath + "/www/");
-		cpx.copySync(webAssetPath + "../../../../../res/xml/config.xml", webPath + "/res/xml/");
+		cpx.copySync(webAssetPath + "../../../../../config.xml", webAssetPath + "/www/");
+		cpx.copySync(webAssetPath + "../../../../../config.xml", webPath + "/res/xml/");
 	}
 }
 
@@ -137,6 +145,9 @@ function syncBundleJs() {
 		console.log("bundle ios sync");
 		cpx.copy("../assets/www/js/index.js", iosPath + "/www/js");
 	}
+	
+	let projectBasePath = "../../../../../../";
+	cpx.copySync("../assets/www/js/index.js", projectBasePath + "/www/js");
 }
 function createFolders() {
 	let resMandatory = [
@@ -589,6 +600,7 @@ function updateDrawableSize() {
 		str += fileName.substr(0, j) + ".height=" + dimensions.height + '\n';
 	}
 
-	fs.writeFileSync(`../resources/drawable/drawable_size.properties`, str);	
+	fs.writeFileSync(`../resources/drawable/drawable_size.properties`, str);
+	sortAndConcatDrawableXmlFiles();	
 }
 

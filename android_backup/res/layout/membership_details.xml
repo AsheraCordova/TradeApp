@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/h1_bold_black"
+        modelPojoToUi="text = title from item->loopvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Header"></TextView>
+
+    <TextView
+        android:id="@+id/desc"
+        style="@style/h2_black"
+        modelPojoToUi="text = desc from item->loopvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Header"></TextView>
+
+    <TextView
+        android:id="@+id/details"
+        style="@style/h2_black"
+        android:textColor="@color/color_gray_900"
+        html="true"
+        widget-override-swt="StyledLabel"
+        modelPojoToUi="text = details from item->loopvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+</LinearLayout>

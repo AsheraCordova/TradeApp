@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <RelativeLayout
+        swtAttachEventBubbler="mouseup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_yellow_300"
+        android:onClick="gotoLogin">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:src="@drawable/ashera_logo_no_resize" />
+
+
+        <TextView
+            style="@style/h3_bold_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/copyright_text">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</layout>

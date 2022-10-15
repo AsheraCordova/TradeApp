@@ -1,9 +1,0 @@
-export const main_view:string = '@+id/main_view';
-export const tabHolderLayout:string = '@+id/tabHolderLayout';
-export const orderPreviewTabs:string = '@+id/orderPreviewTabs';
-export const trading:string = '@+id/trading';
-export const booking:string = '@+id/booking';
-export const traded_title:string = '@+id/traded_title';
-export const bought_title:string = '@+id/bought_title';
-export const no_token_booking:string = '@+id/no_token_booking';
-export const booked_items:string = '@+id/booked_items';

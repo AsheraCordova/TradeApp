@@ -5,6 +5,11 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
+	"swt-run": "cd platforms/swt/app && gradle run",
+	"browser-run": "cd platforms/browser/app && gradle execute && cd src/main/assets/www && http-server",
+	"generate-platform-res": "cd platforms/android/app/src/main/gentool && npm install && npm run resize && npm run start",
+	"generate-platform-js": "cd platforms/android/app/src/main/tsc && npm install && npm run build",
+	"install-all-plugins" : "cordova plugin add https://github.com/AsheraCordova/Core && cordova plugin add https://github.com/AsheraCordova/CapInsets &&  cordova plugin add https://github.com/AsheraCordova/ConstraintLayout && cordova plugin add https://github.com/AsheraCordova/CSSBorder && cordova plugin add https://github.com/AsheraCordova/DateTime && cordova plugin add https://github.com/AsheraCordova/Drawer && cordova plugin add https://github.com/AsheraCordova/GridLayout && cordova plugin add https://github.com/AsheraCordova/RecycleView && cordova plugin add https://github.com/AsheraCordova/Toolbar && cordova plugin add https://github.com/AsheraCordova/IQkeyboardManager && cordova plugin add https://github.com/AsheraCordova/ShutterBug && cordova plugin add https://github.com/AsheraCordova/Glide && cordova plugin add https://github.com/AsheraCordova/SDWebImagePlugin && cordova plugin add cordova-plugin-splashscreen && cordova plugin add https://github.com/AsheraCordova/Splash && cordova plugin add https://github.com/AsheraCordova/Dialog && cordova plugin add https://github.com/AsheraCordova/cordova-plugin-camera && cordova plugin add https://github.com/AsheraCordova/cordova-plugin-camera-swt && cordova plugin add https://github.com/AsheraCordova/cordova-plugin-qrscanner && cordova plugin add https://github.com/AsheraCordova/cordova-plugin-qrscanner-swt && cordova plugin add cordova-plugin-sqlite-2.git && cordova plugin add https://github.com/AsheraCordova/cordova-plugin-sqlite-2-swt.git && cordova plugin add https://github.com/AsheraCordova/IndexedDB.git",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

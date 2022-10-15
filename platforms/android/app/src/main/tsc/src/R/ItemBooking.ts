@@ -1,9 +1,0 @@
-export const submit:string = '@+id/submit';
-export const selectatoreTxt:string = '@+id/selectatoreTxt';
-export const outlet:string = '@+id/outlet';
-export const outletError:string = '@+id/outletError';
-export const dateofvisit:string = '@+id/dateofvisit';
-export const dateofvisitError:string = '@+id/dateofvisitError';
-export const quantitytext:string = '@+id/quantitytext';
-export const quantitytextError:string = '@+id/quantitytextError';
-export const quantity:string = '@+id/quantity';

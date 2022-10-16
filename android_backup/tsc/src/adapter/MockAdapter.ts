@@ -1,7 +1,7 @@
 import Adapter from './Adapter';
 import { plainToClass, plainToInstance } from 'class-transformer';
 import { User, Item, Store, BookedItem, Notification, RegistrationScreenData, Registration, TradeItem, Transaction, Earning, RedeemTransaction, BoughtTransaction, PasswordUpdate } from "../Model";
-
+import dedent from "ts-dedent";
 
 function sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -37,7 +37,7 @@ export default class MockAdapter implements Adapter {
                 [
                     {
                         "id": "0", "title": "Membership 1", "desc": "Best for starters between age 18 & 20",
-                        "details": `<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 1 IS 1 INR INCLUSIVE OF GST</span>
+                        "details": dedent`<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 1 IS 1 INR INCLUSIVE OF GST</span>
                 <br><br>
                 <ul>
                 <li>Nulla pharetra metus ac ligula aliquam lacinia.</li>
@@ -48,7 +48,7 @@ export default class MockAdapter implements Adapter {
                 </ul>`},
                     {
                         "id": "1", "title": "Membership 2", "desc": "Lot of facilities",
-                        "details": `<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 2 IS 5 INR inclusive of GST</span>
+                        "details": dedent`<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 2 IS 5 INR inclusive of GST</span>
                 <br><br>
                 <ul>
                     <li>Morbi a sapien eget leo gravida vulputate.</li>
@@ -57,7 +57,7 @@ export default class MockAdapter implements Adapter {
                 </ul>`},
                     {
                         "id": "2", "title": "Membership 3", "desc": "Lot of facilities",
-                        "details": `<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 1 IS 100 INR INCLUSIVE OF GST</span>
+                        "details": dedent`<span textStyle="bold">THE MEMBERSHIP FEE FOR ACQUIRING MEMBERSHIP 1 IS 100 INR INCLUSIVE OF GST</span>
                 <br><br>
                 <ul>
                 <li>Proin quis magna ac est facilisis scelerisque sit amet at erat.</li>

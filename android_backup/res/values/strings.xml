@@ -88,13 +88,13 @@
     <string name="trade">TRADE</string>
     <string name="no_items_allocated_for_trading">No Items allocated for trading.</string>
     <string name="buy_item">Buy Item</string>
-    <string name="loading">Loading...</string>
+    <string name="loading" ts="true">Loading...</string>
     <string name="token_expire_msg">Note : All tokens will expire if the item is not bought on the date of visit.</string>
     <string name="my_transactions">My Transactions</string>
     <string name="change_password">Change Password</string>
     <string name="membership_details">Membership Details</string>
-    <string name="terms_and_conditions">Terms And Conditions</string>
-    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions" ts="true">Terms And Conditions</string>
+    <string name="privacy_policy" ts="true">Privacy Policy</string>
     <string name="logout">Logout</string>
     <string name="quantity_format">Quantity - %s item(s)</string>
     <string name="buy_item_transaction">Buy Item Transaction</string>
@@ -156,7 +156,7 @@
     <string name="no_data_found">No Data found :(</string>
     <string name="view_more">VIEW MORE</string>
     <string name="redeem_points">Redeem Points</string>
-    <string name="confirm_logout">Do you want to logout?</string>
+    <string name="confirm_logout" ts="true">Do you want to logout?</string>
     <string name="home">Home</string>
     <string name="save">Save</string>
     <string name="update_profile">Update Profile</string>

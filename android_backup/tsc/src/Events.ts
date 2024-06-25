@@ -25,6 +25,7 @@ export class MenuItemEvent implements Event {
     action: string;
     eventType: string;
     event: string;
+    parentFragments: string;
 }
 
 export class OnClickEvent implements Event {
@@ -32,6 +33,7 @@ export class OnClickEvent implements Event {
     action: string;
     eventType: string;
     event: string;
+    parentFragments: string;
 }
 
 export class ItemClickEvent extends OnClickEvent {

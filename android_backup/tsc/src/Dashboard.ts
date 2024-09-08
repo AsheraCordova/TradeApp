@@ -12,6 +12,7 @@ import { RecyclerView } from './android/widget/RecyclerViewImpl';
 import { ScopedObject } from './app/ScopedObject';
 import LocaleManager from './app/LocaleManager';
 import EventType from './app/EventType';
+import { DialogHelper } from './helpers/DialogHelper';
 
 export default class Dashboard extends Fragment {
     @InjectController({})
@@ -180,11 +181,12 @@ export default class Dashboard extends Fragment {
 
     async logout() {
         let confirmMsg = LocaleManager.getInstance().translate("@string/confirm_logout");
-        let flag = confirm(confirmMsg);
-        if (flag) {
-            await this.navController.reset().navigateWithPopBackStack(login, 
-                new ScopedObject("login->view as map", {})).executeCommand(); 
-        }
+        DialogHelper.confirm(confirmMsg, async(index:number) => {
+            if (index == 1) {
+                await this.navController.reset().navigateWithPopBackStack(login, 
+                    new ScopedObject("login->view as map", {})).executeCommand(); 
+            }
+        });
     }
 
     @Progress("@string/loading")
@@ -195,7 +197,7 @@ export default class Dashboard extends Fragment {
     }
 
     async makePaymentAfterLogin() {
-        alert("Integrate your favourite payment gateway here :)))");
+        DialogHelper.alert("Integrate your favourite payment gateway here :)))", () => {});
     }
 
 }

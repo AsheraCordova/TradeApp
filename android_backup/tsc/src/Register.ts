@@ -7,6 +7,7 @@ import { RegSubmitEvent } from './Events';
 import Progress from './decorator/Progress';
 import { ScopedObject } from './app/ScopedObject';
 import EventType from './app/EventType';
+import { DialogHelper } from './helpers/DialogHelper';
 
 export default class Register extends Fragment {
     @InjectController({})
@@ -50,7 +51,7 @@ export default class Register extends Fragment {
     }
 
     async payNow() {
-        alert("Integrate your favourite payment gateway here :)))");
+        DialogHelper.alert("Integrate your favourite payment gateway here :)))", () => {});
     }
 
     async viewMemberShipDetails() {

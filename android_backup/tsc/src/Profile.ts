@@ -10,6 +10,7 @@ import AdapterFactory from './adapter/AdapterFactory';
 import { ScopedObject } from './app/ScopedObject';
 import EventType from './app/EventType';
 import { ImageView } from './android/widget/ImageViewImpl';
+import { DialogHelper } from './helpers/DialogHelper';
 
 export default class Profile extends Fragment {
     @InjectController({})
@@ -110,8 +111,8 @@ export default class Profile extends Fragment {
         (navigator as any).camera.getPicture((imageData: any)=>{
             this.userProfile.setSrc("data:image/png;base64," + imageData);
             this.executeCommand(this.userProfile);
-        }, (message: any) => {
-            alert(message);
+        }, (message: string) => {
+            DialogHelper.alert(message, () => {});
         }, {            
             destinationType: 0            
         });

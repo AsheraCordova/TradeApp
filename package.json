@@ -55,7 +55,8 @@
     "swt": "git+https://github.com/AsheraCordova/cordova-swt.git",
     "cordova-plugin-dialogs": "^2.0.2",
     "cordova-plugin-dialogs-ashera": "git+https://github.com/AsheraCordova/BrowserDialogs.git",
-	  "com.ashera.navigationview": "github:AsheraCordova/NavigationView"
+	"com.ashera.navigationview": "github:AsheraCordova/NavigationView",
+	"com.ashera.coordinatorlayout": "git+https://github.com/AsheraCordova/CoordinatorLayout.git"
   },
   "cordova": {
     "platforms": [
@@ -88,7 +89,8 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-dialogs": {},
       "cordova-plugin-dialogs-ashera": {},
-	  	"com.ashera.navigationview": {}
+	  "com.ashera.navigationview": {},
+	  "com.ashera.coordinatorlayout": {}
     }
   }
 }

@@ -26,6 +26,7 @@ export class MenuItemEvent implements Event {
     eventType: string;
     event: string;
     parentFragments: string;
+    dialogClosed: string;
 }
 
 export class OnClickEvent implements Event {
@@ -34,6 +35,7 @@ export class OnClickEvent implements Event {
     eventType: string;
     event: string;
     parentFragments: string;
+    dialogClosed: string;
 }
 
 export class ItemClickEvent extends OnClickEvent {
